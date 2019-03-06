@@ -27,6 +27,7 @@ use SportMonks\API\Resources\Seasons;
 use SportMonks\API\Resources\Squad;
 use SportMonks\API\Resources\Teams;
 use SportMonks\API\Resources\Venues;
+use SportMonks\API\Resources\Markets;
 use SportMonks\API\Traits\Utility\InitTrait;
 use SportMonks\API\Utilities\Auth;
 
@@ -49,6 +50,7 @@ use SportMonks\API\Utilities\Auth;
  * @method Rounds rounds()
  * @method Squad squad()
  * @method Coaches coaches()
+ * @method Markets markets()
  */
 class HTTPClient extends HTTP
 {
@@ -146,7 +148,8 @@ class HTTPClient extends HTTP
             'players' => Players::class,
             'rounds' => Rounds::class,
             'squad' => Squad::class,
-            'coaches' => Coaches::class
+            'coaches' => Coaches::class,
+            'markets' => Markets::class
         ];
     }
 
